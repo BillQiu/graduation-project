@@ -5,9 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>大白兔</title>
-
+        <!-- font -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+        
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link  href="flexslider/flexslider.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
         <!--[if lt IE 9]>
           <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -15,18 +20,206 @@
     </head>
 
     <body>
-        <h1>你好，世界！</h1>
+        <!-- page-header -->
+        <div class="page-header">
+            <div class="container">
+                <h1>DaBuy 2</h1>
+                &nbsp;<div id="logo">
+                    <a href="index.html"><img src="icon/rabbit.png" alt=""></a>
+                </div>
+                <ul class="top-list">
+                    <li><a><br><i class="fa fa-heart"></i></a></li>
+                    <li><a><br><i class="fa fa-shopping-cart"></i></a></li>
+                    <li><a><br><i class="fa fa-sign-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- slider -->
+        <div class="slider-container">
+            <div class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li><img src="images/slider/3.jpg"></li>
+                        <li><img src="images/slider/2.jpg"></li>
+                        <li><img src="images/slider/1.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- search -->
+        <div class="search-container">
+            <div class="jumbotron">
+                <div class="container">
+                    <p>搜索你想要的</p>
+                    <div class="col-sm-4 col-sm-offset-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Go!</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- type -->
+        <div class="type-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="service wow fadeInUp">
+                            <h3>电子产品</h3>
+                            <i class="fa fa-mobile"></i>
+                            <a class="" href="##">More</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="service wow fadeInDown">
+                            <h3>衣裤配饰</h3>
+                            <i class="fa fa-gift"></i>
+                            <a class="" href="##">More</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="service wow fadeInUp">
+                            <h3>二手书籍</h3>
+                            <i class="fa fa-book"></i>
+                            <a class="" href="##">More</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="service wow fadeInDown">
+                            
+                            <h3>运动器材</h3>
+                            <i class="fa fa-futbol-o"></i>
+                            <a class="" href="##">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- digital -->
+        <div class="digital-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>电子产品</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="images/work1.jpg">
+                        <div class="describe">
+                            <p>手机</p>
+
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-sm-3">
+                       <img src="images/work1.jpg">
+                        <div class="describe">
+                            <p>相机</p>
+
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/work1.jpg">
+                        <div class="describe">
+                            <p>电脑</p>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="images/work1.jpg">
+                        <div class="describe">
+                            <p>游戏机</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- clothes -->
+        <div class="clothes-√">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>衣裤配饰</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="images/work1.jpg">
+                        <p>女装</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/work1.jpg">
+                        <p>男装</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/work1.jpg">
+                        <p>配饰</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- book -->
+        <div class="book">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+
+                        <h2>二手书籍</h2>
+                        <div class="row">
+                        <div class="book-img">
+                            <img src="images/book.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- sports -->
+        <div class="sports">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>运动器材</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                </div>
+            </div>
+        </div>
 
 
-
-
-
-
-
-
-
-
-        <script src="//cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script src="flexslider/jquery.flexslider-min.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $(".flexslider").flexslider({
+                slideshowSpeed: 4000, //展示时间间隔ms
+                animationSpeed: 400, //滚动时间ms
+                touch: true //是否支持触屏滑动
+            });
+        }); 
+</script>
     </body>
 </html>
