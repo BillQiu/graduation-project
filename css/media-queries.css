@@ -1,0 +1,5 @@
+@media (max-width: 767px) {
+	.slider-container {display: none;}
+	#logo {display: none;}
+	.search-container input {height: 35px;}
+}

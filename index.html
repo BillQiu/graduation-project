@@ -5,14 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>大白兔</title>
+        <link rel="shortcut icon" href="icon/icon.ico">
         <!-- font -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
-        
+
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link  href="flexslider/flexslider.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+        <link href="css/media-queries.css"rel="stylesheet">
         <!--[if lt IE 9]>
           <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -52,15 +54,12 @@
         <div class="search-container">
             <div class="jumbotron">
                 <div class="container">
-                    <p>搜索你想要的</p>
-                    <div class="col-sm-4 col-sm-offset-4">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search for...">
-                            <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">Go!</button>
-                            </span>
+                    <!-- <p>在这里</p> -->
+                    <!-- <p>有你想要的</p> -->
+                        <div class="input">
+                            <input type="text" name="s"  value="Search..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search...';}">
+                            <input type="submit" class="" value="Subscribe" id="submit" name="submit">
                         </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -73,21 +72,18 @@
                         <div class="service wow fadeInUp">
                             <h3>电子产品</h3>
                             <i class="fa fa-mobile"></i>
-                            <a class="" href="##">More</a>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="service wow fadeInDown">
                             <h3>衣裤配饰</h3>
                             <i class="fa fa-gift"></i>
-                            <a class="" href="##">More</a>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="service wow fadeInUp">
                             <h3>二手书籍</h3>
                             <i class="fa fa-book"></i>
-                            <a class="" href="##">More</a>
                         </div>
                     </div>
                     <div class="col-sm-3">
@@ -95,7 +91,6 @@
                             
                             <h3>运动器材</h3>
                             <i class="fa fa-futbol-o"></i>
-                            <a class="" href="##">More</a>
                         </div>
                     </div>
                 </div>
@@ -212,6 +207,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="flexslider/jquery.flexslider-min.js"></script>
         <script src="js/wow.min.js"></script>
+        <script src="js/animate.js"></script>
         <script type="text/javascript">
         $(function() {
             $(".flexslider").flexslider({

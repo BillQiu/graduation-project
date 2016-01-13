@@ -1,21 +1,27 @@
-body {font-family: "Open Sans", sans-serif;}
+body {font-family: arial, "Open Sans", sans-serif;}
 
-/*web font*/
-@font-face {
-	font-family: "pinghei-light";
-	src:url("../font/PingHei-light.woff"); 
+/*icon font*/
 
-}
 /*page-header*/
 .page-header {
 	border-bottom: none;
 	margin: 0;
 	background: #eee;
-	padding-bottom: 40px
+	padding-bottom: 40px;
 }
 
-h1 {display: inline-block; font-weight: 700; color: #5c5c5c; font-family: "Lobster";}
-h2 {text-align: center; font-family: "pinghei-light"}
+
+h1 {
+	display: inline-block;
+	font-weight: 700;
+	color: #5c5c5c;
+	font-family: "Lobster";
+}
+
+h2 {
+	text-align: center;
+	font-weight: 400;
+}
 
 #logo {
 	position: absolute;
@@ -80,12 +86,75 @@ h2 {text-align: center; font-family: "pinghei-light"}
 	text-align: center;
 }
 
+.search-container p {
+	letter-spacing: 20px;
+	font-size: 30px;
+}
+
+@keyframes inputShadow {
+	0% {
+		box-shadow: none;
+	}
+
+	100% {
+		box-shadow: 0 0 50px #ccc;
+	}
+}
+input[type=text] {
+	border: 1px solid #ccc;
+	outline: medium;
+	height: 45px;
+	width: 200px;
+	border-radius: 21px;
+	padding-left: 13px;
+	color: #9d9d9d;
+}
+
+input[type=text]:focus {
+	animation: inputShadow .5s ease forwards;
+}
+
+input[type=submit] {
+	background: url(../images/search.png) no-repeat;
+	border:none;
+	outline: medium;
+	text-indent: -9999px;
+	width: 41px;
+	height: 26px;
+	margin-left: -40px;
+	opacity: .4;
+}
+
+.search-container i {
+	position: absolute;
+}
+
+.search-container .jumbotron {
+	margin-bottom: 0;
+}
+
 /*type*/
+.type-container {
+	background: #f8f8f8;
+	padding-bottom: 20px;
+}
+
+.type-container h3 {
+	font-weight: 400;
+	color: #888;
+}
+
 .type-container i {
 	font-size: 95px;
 	display: block;
+	cursor: pointer;	
+	-webkit-transition: all .5s ease-in .05s;
+	transition: all .5s ease-in .05s;
 }
-
+.type-container i:hover {
+	-webkit-transform: scale(1.4) ;
+	transform: scale(1.4) ;
+}
 .type-container a {
 	display: inline-block;
 	padding: 5px 22px;
@@ -98,6 +167,23 @@ h2 {text-align: center; font-family: "pinghei-light"}
 .type-container .col-sm-3 {
 	text-align: center;
 }
+
+.type-container .col-sm-3:nth-child(1) i {
+	color: #285171;
+}
+
+.type-container .col-sm-3:nth-child(2) i {
+	color: #82C0AF;
+}
+
+.type-container .col-sm-3:nth-child(3) i {
+	color: #DAD4B9;
+}
+
+.type-container .col-sm-3:nth-child(4) i {
+	color: #D8B368;
+}
+
 
 /*digital*/
 .digital-container .col-sm-3 {
@@ -141,7 +227,3 @@ h2 {text-align: center; font-family: "pinghei-light"}
 
 
 
-
-.dib {
-	display: inline-block;
-}
