@@ -1,5 +1,13 @@
-@media (max-width: 767px) {
+@media (max-width: 767px) {							/*智能手机*/
 	.slider-container {display: none;}
 	#logo {display: none;}
 	.search-container input {height: 35px;}
+}
+
+@media (min-width:768px) and (max-width:991px) {	/*平板*/
+	.slider-container {display: none;}
+}
+
+@media (min-width:768px) {
+	
 }

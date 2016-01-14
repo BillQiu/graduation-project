@@ -13,16 +13,25 @@ $(function() {
 
 
 // 四大类动画
+// $(function() {
+// 	$(".type-container i").mousemove(function() {
+// 		if ( !$(this).siblings().is(":animated") ) {
+// 			$(this).siblings().animate({opacity: 0}, 500);
+// 		}
+// 	});
+// 	$(".type-container i").mouseleave(function() {
+// 		$(this).siblings().animate({opacity: 1}, 500);
+// 	});
+
+// })
+
+
 $(function() {
-	$(".type-container i").mousemove(function() {
+	$(".type-container i").hover(function() {
 		if ( !$(this).siblings().is(":animated") ) {
 			$(this).siblings().animate({opacity: 0}, 500);
 		}
-	});
-	$(".type-container i").mouseleave(function() {
+	}, function() {
 		$(this).siblings().animate({opacity: 1}, 500);
 	});
-
 })
-
-
