@@ -1,4 +1,10 @@
+html {font-size: 62.5%;}
+body {font-size: 12px; font-size: 1.2rem;}
 body {font-family: arial, "Open Sans", sans-serif;}
+
+/*CSSreset*/
+a {color: #000;}
+a:hover {text-decoration: none; cursor: pointer;}
 
 /*commom*/
 .col-sm-12 {
@@ -10,7 +16,7 @@ body {font-family: arial, "Open Sans", sans-serif;}
 	border-bottom: none;
 	margin: 0;
 	background: #eee;
-	padding-bottom: 40px;
+	padding-bottom: 4rem;
 }
 
 
@@ -28,19 +34,19 @@ h2 {
 	background: #f8f8f8;
 	margin-left: auto;
 	margin-right: auto;
-	width: 150px;
-	margin-bottom: 10px;
-	padding-bottom: 6px;
+	width: 15rem;
+	margin-bottom: 1rem;
+	padding-bottom: .6rem;
 }
 
 h3 {
-	font-size: 25px;
+	font-size: 2.5rem;
 	font-weight: 300;
 
 }
 #logo {
 	position: absolute;
-	width: 80px;
+	width: 8rem;
 	left: 50%;
 	display: inline-block;
 	text-align: center;
@@ -60,17 +66,17 @@ h3 {
 }
 
 .page-header ul li {
-	width: 36px;
-	height: 36px;
+	width: 3.6rem;
+	height: 3.6rem;
 	float: left;
 	margin: 0 10px;
 }
 
 .page-header ul li i {
 	cursor: pointer;
-	font-size: 38px;
-	width: 36px;
-	height: 36px;
+	font-size: 3.8rem;
+	width: 3.6rem;
+	height: 3.6rem;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -102,8 +108,8 @@ h3 {
 }
 
 .search-container p {
-	letter-spacing: 20px;
-	font-size: 30px;
+	letter-spacing: 2rem;
+	font-size: 2rem;
 }
 
 @keyframes inputShadow {
@@ -112,16 +118,16 @@ h3 {
 	}
 
 	100% {
-		box-shadow: 0 0 50px #ccc;
+		box-shadow: 0 0 5rem #ccc;
 	}
 }
 input[type=text] {
 	border: 1px solid #ccc;
 	outline: medium;
-	height: 45px;
-	width: 200px;
-	border-radius: 21px;
-	padding-left: 13px;
+	height: 4.5rem;
+	width: 20rem;
+	border-radius: 2.1rem;
+	padding-left: 1.3rem;
 	color: #9d9d9d;
 }
 input[type=text]:focus {
@@ -137,9 +143,9 @@ input[type=submit] {
 	border:none;
 	outline: medium;
 	text-indent: -9999px;
-	width: 41px;
-	height: 26px;
-	margin-left: -40px;
+	width: 4.1rem;
+	height: 2.6rem;
+	margin-left: -4rem;
 	opacity: .4;
 }
 
@@ -153,8 +159,8 @@ input[type=submit] {
 
 /*type*/
 .type-container {
-	padding-bottom: 26px;
-	margin-bottom: 15px;
+	padding-bottom: 2.6rem;
+	margin-bottom: 1.5rem;
 }
 
 .type-container h3 {
@@ -163,7 +169,7 @@ input[type=submit] {
 }
 
 .type-container i {
-	font-size: 95px;
+	font-size: 9.5rem;
 	display: block;
 	cursor: pointer;	
 	-webkit-transition: all .5s ease-in .05s;
@@ -207,7 +213,7 @@ input[type=submit] {
 .digital-container {
 	text-align: center;
 	background: #f8f8f8;
-	margin-bottom: 25px;
+	margin-bottom: 2.5rem;
 }
 
 .digital-container img {
@@ -218,7 +224,7 @@ input[type=submit] {
 /*clothes*/
 .clothes-container {
 	text-align: center;
-	margin-bottom: 25px;
+	margin-bottom: 2.5rem;
 }
 
 .clothes-container img {
@@ -234,7 +240,7 @@ input[type=submit] {
 
 /*sports*/
 .sports-contaniner {
-	margin-bottom: 25px;
+	margin-bottom: 2.5rem;
 }
 
 .sports-container h2 {
@@ -242,25 +248,81 @@ input[type=submit] {
 }
 
 .sports-select ul li:first-child {
-	margin-left: 50px;
+	margin-left: 5rem;
 }
 .sports-select ul li:nth-child(2) {
 	float: right;
-	margin-right: 50px;
+	margin-right: 5rem;
+}
+
+#tab-ball img {
+	max-width: 100%;
+	margin-top: 2rem;
+	width: 40rem;
+	/*height: 40rem;*/
+	border-top-right-radius: 5rem;
+	border-bottom-left-radius: 5rem
+}
+
+#tab-rope img {
+	max-width: 100%;
+	margin-top: 2rem;
+	width: 30rem;
+	/*height: 40rem;*/
+	border-bottom-right-radius: 5rem;
+	border-top-left-radius: 5rem
 }
 
 /*book*/
 .book-container {
 	background: #f8f8f8;
-	margin-bottom: 25px;
+	margin-bottom: 2.5rem;
+	margin-bottom: 0;
 }
 .book-container .book-img {
 	text-align: center;
 }
 
 .book-container img {
-	max-width: 100%;
+	max-width: 57%;
+	margin: 3rem auto;
+}
+
+
+/*footer*/
+footer {
+	background: #AAA9A9;
+	/*height: 15rem;*/
+	padding: 6rem 6rem 2rem;
+	text-align: center;
+}
+
+footer .info {
+	list-style: none;
 	margin: 0 auto;
+	width: 21rem;
+	padding: 0;
+
+}
+
+footer p {
+	margin-top: 2rem;
+}
+
+.info li {
+	float: left;
+	padding: 0 2rem;
+	border-right: 1px solid #000;
+	border-color: rgba(0, 0, 0, .5);
+	font-size: 1.3rem;
+}
+.info li:last-child {
+	border-right: none;
+
+}
+
+.info li a {
+	color: rgba(0, 0, 0, .5);
 }
 
 
@@ -275,9 +337,15 @@ input[type=submit] {
 
 
 
-
-
-
+.clearfix:after {
+	content:"\200B";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
 
 
 

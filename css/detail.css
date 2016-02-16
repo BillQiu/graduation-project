@@ -1,0 +1,90 @@
+body {font-family: arial, "Open Sans", sans-serif;}
+
+/*CSSreset*/
+a {color: #000;}
+a:hover {text-decoration: none; cursor: pointer;}
+li {list-style: none;}
+
+/*header*/
+.navbar-header__a {
+	display: inline-block;
+	font-weight: 700;
+	color: #5c5c5c;
+	font-family: "Lobster";
+}
+
+/*merch*/
+.merch--cs7 {
+	padding-left: 5px;
+	padding-right: 0;
+}
+
+.slide-top {
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+
+.slide__a {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slide__a:nth-of-type(1) {
+	position: relative;
+}
+
+.slide__img {
+	max-width: 100%;
+}
+
+.pagination__a {
+	margin-right: 10px;
+}
+
+
+.merch-info {
+	
+}
+
+.merch__ul li {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fl {float: left;}
+
+.clearfix:after {
+	content: "\200B";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+
+
+
+
+
+
