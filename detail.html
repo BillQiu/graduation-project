@@ -3,15 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="widtd=device-widtd, initial-scale=1">
         <title>商品详情</title>
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster"> -->
         <link rel="stylesheet" type="text/css" href="css/detail.css">
 
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!-- WARNING: Respond.js doesn't work if you view tde page via file:// -->
         <!--[if lt IE 9]>
           <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -69,10 +69,19 @@
             </div><!-- /.container-fluid -->
         </nav>
 
+        <div class="bread">
+            
+        </div>
+
         <div class="merch">
             <div class="container">
+                <ol class="breadcrumb">
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">电子产品</a></li>
+                    <li class="active">手机</li>
+                </ol>
                 <div class="row">
-                    <div class="merch--cs7 col-sm-7 fl ">
+                    <div class="merch--cs7 col-sm-6 fl ">
                         <div class="slider-top">
                             <a class="slide__a" href="#"><img src="images/img-big1.jpg" class="slide__img"></a>
                             <a class="slide__a" href="#"><img src="images/img-big1.jpg" class="slide__img"></a>
@@ -91,50 +100,196 @@
                                     <a href="#2" class="pagination__a">
                                         <img src="images/img-small3.jpg">
                                     </a>
-
                                 </li>
                             </ul>
-                        </div>
+                        </div> <!-- slide-bottom -->
+
+
+
 
 
                     </div>
-                    <div class="col-sm-5">
+                    <div class="col-sm-6">
                         <div class="merch-info">
-                            <h3>iPhone6 16GB 8成新</h3>
+                            <h3 class="merch-tt">iPhone6 16GB 8成新</h3>
                             <ul class="merch__ul">
                                 <li class="clearfix">
-                                    <span class="fl">白兔售价</span>
-                                    <p class="fl">3140元</p>
+                                    <span class="merch-info--detail fl">白兔售价</span>
+                                    <p class="merch-info--price fl">3140元</p>
                                 </li>
                                 <li class="clearfix">
-                                    <span class="fl">手机容量</span>
+                                    <span class="merch-info--detail fl">手机容量</span>
                                     <p class="fl">16GB</p>
                                 </li>
                                 <li class="clearfix">
-                                    <span class="fl">手机颜色</span>
+                                    <span class="merch-info--detail fl">手机颜色</span>
                                     <p class="fl">深空灰色</p>
                                 </li>
                                 <li class="clearfix">
-                                    <span class="fl">手机版本</span>
+                                    <span class="merch-info--detail fl">手机版本</span>
                                     <p class="fl">国行</p>
                                 </li>
                                 <li class="clearfix">
-                                    <span class="fl">网络制式</span>
+                                    <span class="merch-info--detail fl">网络制式</span>
                                     <p class="fl">移动4G/联通2G</p>
                                 </li>
+                                <li class="clearfix">
+                                    <span class="merch-info--detail fl">联系方式</span>
+                                    <p class="fl">13487657554</p>
+                                </li>
+                                <li class="clearfix">
+                                    <span class="merch-info--detail fl">校区</span>
+                                    <p class="fl">浙江师范大学</p>
+                                </li>
                             </ul>
-                        </div>
-                    </div>
+                            <p class="merch-info--describe">自己用的现在换了一部6sp，这部就转让出去不用了。因为自己用过了所以便宜点吧。灰色，16G，国行，非诚勿扰，谢谢。</p>
+                        </div><!-- merch-info -->
+                    </div><!-- col-sm-5 -->
+
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- merch -->
+
+        <div class="info-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9">
+                        <div class="detail-info">
+                            <ul class="nav nav-tabs" id="tab-list">
+                                <li class="active"><a href="#tab-proinfo" class="tab-list__a" data-toggle="tab">商品详情</a></li>
+                                <li><a href="#tab-report" class="tab-list__a" data-toggle="tab">质检信息</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab-proinfo">
+                                    <table class="tab-proinfo table table-bordered">
+                                        <caption>包裹清单</caption>
+                                        <tbody>
+                                            <tr><td>包裹清单</td><td>iPhone6&nbsp;&nbsp;&nbsp;&nbsp;x1</td></tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="tab-proinfo table table-bordered">
+                                        <caption>基本参数</caption>
+                                        <tbody>
+                                            <tr><td>品牌</td><td>苹果</td><td>系统版本</td><td>国行</td></tr>
+                                            <tr><td>型号</td><td>iPhone6</td><td>CPU型号</td><td>苹果A8</td></tr>
+                                            <tr><td>上市时间</td><td>2014年</td><td>CPU频率</td><td>1.4GHz</td></tr>
+                                            <tr><td>颜色</td><td>深空灰色</td><td>存储容量</td><td>16GB</td></tr>
+                                            <tr><td>智能机</td><td>是</td><td>SIM卡尺寸</td><td>Nano-SIM卡</td></tr>
+                                            <tr></tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="tab-proinfo table table-bordered">
+                                        <caption>网络制式</caption>
+                                        <tbody>
+                                            <tr><td>移动制式</td><td> 支持4G </td></tr>
+                                            <tr><td>联通制式</td><td> 支持2G </td></tr>
+                                            <tr><td>电信制式</td><td> 不支持  </td></tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="tab-proinfo table table-bordered">
+                                        <caption>拍照摄像</caption>
+                                        <tbody>
+                                            <tr><td>主摄像头像素</td><td>800万像素</td><td>闪光灯</td><td>后置双LED闪光灯</td></tr>
+                                            <tr><td>副摄像头像素</td><td>120万像素 </td><td>传感器类型</td><td>CMOS</td></tr>
+                                        </tbody>
+                                    </table>
+
+                                    <table class="tab-proinfo table table-bordered">
+                                        <caption>其他</caption>
+                                        <tbody>
+                                            <tr><td>外形尺寸</td><td>138.1mm×67mm×6.9mm </td><td>数据线</td><td>Lightning</td></tr>
+                                            <tr><td>耳机接口</td><td>3.5mm</td><td>蓝牙</td><td>支持</td></tr>
+                                            <tr><td>重量</td><td>129g</td><td></td><td></td></tr>
+                                        </tbody>
+                                    </table>
+                                </div><!-- tab-proinfo -->
+
+                                <div class="tab-pane" id="tab-report">
+                                    <p class="tab-report--tt">成色标准</p>
+                                    <table class="tab-report table table-bordered">
+                                        <tbody>
+                                            <tr><td>99成新</td><td>全新或仅拆封未使用，手机未激活使用</td></tr>
+                                            <tr><td>95成新</td><td>外观及屏幕没有使用痕迹，无任何功能故障</td></tr>
+                                            <tr><td>9成新</td><td>有轻微使用痕迹，无任何功能故障，屏幕电池损耗正常范围内</td></tr>
+                                            <tr><td>8成新</td><td>有较明显使用痕迹，无任何功能故障，屏幕电池损耗正常范围内</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div><!-- tab-report -->
+                            </div><!-- tab-content -->
+                        </div><!-- detail-info -->
 
 
+                    </div><!-- col-sm-10 -->
 
 
-                </div>
-            </div>
-        </div>
+                    <div class="col-sm-3">
+                        <div class="sub-merch">
+                            <div class="list-group">
+                                <h3 class="list-group--tt list-group-item">同款手机</h3>
+                                <a href="#" class="list-group-item">
+                                    <dl class="contact-merch">
+                                        <dt>
+                                            <img src="images/sub-merch.jpg" class="sub-merch--img">
+                                        </dt>
+                                        <dd class="contact-merch--describe">
+                                            <h3 class="contact-merch--protitle">iPhone6 银色 16GB<span>9成新</span></h3>
+                                            <p class="contact-merch--system">移动4G/联通4G</p>
+                                            <p class="contact-merch--price">
+                                                3250 元
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </a>
+
+                                <a href="#" class="list-group-item">
+                                    <dl class="contact-merch">
+                                        <dt>
+                                            <img src="images/sub-merch.jpg" class="sub-merch--img">
+                                        </dt>
+                                        <dd class="contact-merch--describe">
+                                            <h3 class="contact-merch--protitle">iPhone6 银色 16GB<span>9成新</span></h3>
+                                            <p class="contact-merch--system">移动4G/联通4G</p>
+                                            <p class="contact-merch--price">
+                                                3250 元
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </a>
+
+                                <a href="#" class="list-group-item">
+                                    <dl class="contact-merch">
+                                        <dt>
+                                            <img src="images/sub-merch.jpg" class="sub-merch--img">
+                                        </dt>
+                                        <dd class="contact-merch--describe">
+                                            <h3 class="contact-merch--protitle">iPhone6 银色 16GB<span>9成新</span></h3>
+                                            <p class="contact-merch--system">移动4G/联通4G</p>
+                                            <p class="contact-merch--price">
+                                                3250 元
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </a>
+                            </div><!-- list-group -->
+                        </div><!-- sub-merch -->
+                    </div><!-- col-sm-2 -->
+                </div><!-- row -->
+            </div><!-- container -->
+        </div><!-- info-box -->
 
 
-
+        <footer>
+            <ul class="info clearfix">
+                <li><a>contact</a></li>
+                <li><a>adress</a></li>
+                <li><a>call</a></li>
+            </ul>
+            <p>&copy Bill_q</p>
+        </footer>
 
 
 
